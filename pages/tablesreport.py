@@ -14,11 +14,6 @@ def tables():
 }
         ITCRDORD = pd.DataFrame(d3,index = ['YES','NO'])
         st.write(ITCRDORD)
-        if st.checkbox('Innovation Activites:Completed or Abandoned'):
-            df = pd.read_excel('output.xlsx',sheet_name = 'Sheet2')
-            df.rename({'Unnamed: 1':' '},axis =1,inplace=True)
-            df.fillna('Value',inplace= True)
-            st.table(df)
         if st.checkbox('Innovation Activities Against Their Total Expenditure'):
             df2 =  pd.read_excel('output.xlsx',sheet_name = 'Sheet3')
             df2.rename({'Unnamed: 0':'x'},axis =1,inplace=True)
