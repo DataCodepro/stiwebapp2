@@ -13,7 +13,7 @@ def tables():
     'Occassional R&D':[284,147]
 }
         ITCRDORD = pd.DataFrame(d3,index = ['YES','NO'])
-        st.table(ITCRDORD)
+        st.write(ITCRDORD)
         if st.checkbox('Innovation Activites:Completed or Abandoned'):
             df = pd.read_excel('output.xlsx',sheet_name = 'Sheet2')
             df.rename({'Unnamed: 1':' '},axis =1,inplace=True)
