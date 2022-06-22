@@ -13,7 +13,7 @@ def tables():
     'Occassional R&D':[284,147]
 }
         ITCRDORD = pd.DataFrame(d3,index = ['YES','NO'])
-        st.write(ITCRDORD)
+        st.table(ITCRDORD)
         if st.checkbox('Innovation Activities Against Their Total Expenditure'):
             df2 =  pd.read_excel('output.xlsx',sheet_name = 'Sheet3')
             df2.rename({'Unnamed: 0':'x'},axis =1,inplace=True)
