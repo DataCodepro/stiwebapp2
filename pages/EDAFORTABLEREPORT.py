@@ -213,8 +213,7 @@ def EDA():
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Others'):
             fig = px.histogram(df2, x="policysup8", color="policysup8",width=800, height=600)
-            fig.update_layout(margin= dict(l=20, r=20, t=20, b=20,
-                                            paper_bgcolor="#202A44",)
+            fig.update_layout(margin= dict(l=20, r=20, t=20, b=20, paper_bgcolor="#202A44",)
                 
     elif select == 'Obstacle':
         df2 = df[['obstacle_cost1',
