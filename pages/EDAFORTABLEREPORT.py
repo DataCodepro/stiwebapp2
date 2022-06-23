@@ -239,7 +239,7 @@ def EDA():
 'obstacle_other2',
 'obstacle_other3'
 ]]
-        df2.replace({'3':'High','2':'Medium','1':'Low','0':'Not experienced','':'Unspecified'},inplace=True)
+        df2.replace({'3':'High','2':'Medium','1':'Low','0':'Not experienced',' ':'Unspecified'},inplace=True)
         st.subheader('Factors Affecting Innovation Activities by Degree of Importance')
         if st.checkbox('Obstacle - lack of in-house funds'):
             fig = px.histogram(df2, x="obstacle_cost1", color="obstacle_cost1",width=800, height=600)
