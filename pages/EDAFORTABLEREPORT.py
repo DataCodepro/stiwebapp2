@@ -34,7 +34,7 @@ def EDA():
         df7.drop('Unnamed: 0',axis = 1,inplace =True)
         if st.checkbox('Innovation Against total expendiure'):
             fig = px.scatter(df7, x="No of Innovations Engagement", y="Total Expenditure",size="Total Expenditure", color="Types of Selected R&D by  Enterprise",hover_name="Types of Selected R&D by  Enterprise"
-                 , log_x=True, size_max=60,width=1000, height=600)
+                 , log_x=True, size_max=60)
             st.plotly_chart(fig)
 
 
@@ -213,9 +213,10 @@ def EDA():
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Others'):
             fig = px.histogram(df2, x="policysup8", color="policysup8",width=800, height=600)
-            fig.update_layout(margin= dict(l=20, r=20, t=20, b=20, paper_bgcolor="#202A44",)
+            fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
+                                            paper_bgcolor="#202A44",)
                 
-   elif select == 'Obstacle':
+    elif select == 'Obstacle':
         df2 = df[['obstacle_cost1',
 'obstacle_cost2',
 'obstacle_cost3',
