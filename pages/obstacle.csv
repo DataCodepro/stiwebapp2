@@ -1,0 +1,43 @@
+,0,1,2,3,4
+obstacle_cost1,High,Medium,Not experienced,Low,Unspecified
+Output,573,337,190,171,88
+obstacle_cost2,High,Medium,Not experienced,Low,Unspecified
+Output,512,296,257,194,100
+obstacle_cost3,High,Medium,Not experienced,Low,Unspecified
+Output,488,352,212,192,115
+obstacle_cost4,Unspecified,High,Medium,Low,Not experienced
+Output,779,212,188,114,66
+obstacle_cost5,Unspecified,High,Medium,Not experienced,Low
+Output,780,209,172,106,92
+obstacle_knowledge1,Not experienced,Low,Medium,High,Unspecified
+Output,434,359,295,153,118
+obstacle_knowledge2,Low,Not experienced,Medium,High,Unspecified
+Output,389,360,316,185,109
+obstacle_knowledge3,Low,Not experienced,Medium,High,Unspecified
+Output,391,375,308,152,133
+obstacle_knowledge4,Not experienced,Low,Medium,High,Unspecified
+Output,410,316,291,221,121
+obstacle_market1,Medium,Low,Not experienced,High,Unspecified
+Output,408,296,288,237,130
+obstacle_market2,Low,Medium,Not experienced,High,Unspecified
+Output,343,343,328,209,136
+obstacle_market3,Unspecified,Not experienced,Low,High,Medium
+Output,713,269,135,127,115
+obstacle_market4,Unspecified,High,Medium,Not experienced,Low
+Output,705,208,191,144,111
+obstacle_market5,Unspecified,Medium,High,Not experienced,Low
+Output,796,175,158,118,112
+obstacle_infra1,High,Medium,Not experienced,Low,Unspecified
+Output,793,262,105,103,96
+obstacle_infra2,High,Not experienced,Medium,Low,Unspecified
+Output,385,341,325,199,109
+obstacle_need1,Not experienced,Low,Medium,Unspecified,High
+Output,480,307,290,166,116
+obstacle_need2,Not experienced,Low,Medium,Unspecified,High
+Output,470,335,273,169,112
+obstacle_other1,Unspecified,Low,Medium,Not experienced,High
+Output,797,166,166,151,79
+obstacle_other2,Unspecified,Medium,Low,Not experienced,High
+Output,794,185,157,124,99
+obstacle_other3,Unspecified,Medium,Low,Not experienced,High
+Output,796,161,157,154,91
