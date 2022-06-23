@@ -87,38 +87,9 @@ def tables():
             st.table(df01)
 
         if st.checkbox('Importance Of Govt Support Policy Programm'):
-            df = pd.read_csv('nigeria-innovation.csv')
-            df3 = df[['policysup1',
-'policysup2',
-'policysup3',
-'policysup4',
-'policysup5',
-'policysup6',
-'policysup7',
-'policysup8'
-]]
-            df3.replace({'3':'Highly important','2':'Moderately important','1':'Slightly important','0':'Not important','':'Unspecified'},inplace=True)
-            d1=pd.DataFrame(df3[['policysup1']].value_counts())
-            d2 =pd.DataFrame(df3[['policysup2']].value_counts())
-            d3 =pd.DataFrame(df3[['policysup3']].value_counts())
-            d4 =pd.DataFrame(df3[['policysup4']].value_counts())
-            d5 =pd.DataFrame(df3[['policysup5']].value_counts())
-            d6 =pd.DataFrame(df3[['policysup6']].value_counts())
-            d7 =pd.DataFrame(df3[['policysup7']].value_counts())
-            d8 =pd.DataFrame(df3[['policysup8']].value_counts())
-            d1.reset_index(inplace=True)
-            d2.reset_index(inplace=True)
-            d3.reset_index(inplace=True)
-            d4.reset_index(inplace=True)
-            d5.reset_index(inplace=True)
-            d6.reset_index(inplace=True)
-            d7.reset_index(inplace=True)
-            d8.reset_index(inplace=True)
-            policy = pd.concat([d1,d2,d3,d4,d5,d6,d7,d8],axis=1)
-            policy.replace({' ':'Unspecified'},inplace =True)
-            policy.rename({0:'Output'},axis = 1,inplace=True)
-            df01 = policy.transpose()
-            st.table(df01)
+            df = pd.read_csv('policy.csv')
+            
+            st.table(df)
         if st.checkbox(' Factors Affecting Innovation Activities by Degree of Importance'):
             df = pd.read_csv('nigeria-innovation.csv')
             df2 = df[['obstacle_cost1',
