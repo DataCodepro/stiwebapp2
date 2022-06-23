@@ -65,7 +65,7 @@ def EDA():
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
-        st.plotly_chart(fig)
+            st.plotly_chart(fig)
         if st.checkbox('Information source - Customers'):
             fig = px.histogram(df2, x="sinfo3", color="sinfo3",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
