@@ -34,7 +34,7 @@ def EDA():
         df7.drop('Unnamed: 0',axis = 1,inplace =True)
         if st.checkbox('Innovation Against total expendiure'):
             fig = px.scatter(df7, x="No of Innovations Engagement", y="Total Expenditure",size="Total Expenditure", color="Types of Selected R&D by  Enterprise",hover_name="Types of Selected R&D by  Enterprise"
-                 , log_x=True, size_max=60,width=800, height=600)
+                 , log_x=True, size_max=60,width=1000, height=600)
             st.plotly_chart(fig)
 
 
