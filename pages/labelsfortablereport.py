@@ -3,7 +3,7 @@ def label():
     select = st.sidebar.selectbox("LABELS",['TABLE'],key =1)
     if select == 'TABLE':
         st.subheader('TABLE REPORT LABEL FOR TABLE 3')
-        st.markdown('''sinfo1:Information source - Internal
+        st.write('''sinfo1:Information source - Internal
     sinfo2:Information source - Suppliers
     sinfo3:Information source - Customers
     sinfo4:Information source - Competitors
@@ -15,7 +15,7 @@ def label():
     sinfo10:Information source - Professional, industry associations
     ''')
         if st.checkbox('TABLE REPORT LABEL FOR TABLE 4'):
-            st.markdown('''ieffect_org1:Effect of innovation (organisational) - reduced response time to customer needs
+            st.write('''ieffect_org1:Effect of innovation (organisational) - reduced response time to customer needs
 ieffect_org2:Effect of innovation (organisational) - improved quality of goods/services
 ieffect_org3:Effect of innovation (organisational) - reduced costs per unit output
 ieffect_org4:Effect of innovation (organisational) - improved staff satisfaction/reduced turn
@@ -23,7 +23,7 @@ ieffect_org5:Effect of innovation (organisational) - increased or maitained mark
 
 ''')
         if st.checkbox('TABLE REPORT LABEL FOR TABLE 5'):
-            st.markdown('''policysup1:Importance of govt support policy/prog - R&D funding
+            st.write('''policysup1:Importance of govt support policy/prog - R&D funding
 policysup2:Importance of govt support policy/prog - Training
 policysup3:Importance of govt support policy/prog - Subsidies
 policysup4:Importance of govt support policy/prog - Tax rebates
@@ -34,7 +34,7 @@ policysup8:Importance of govt support policy/prog - Others
 
 ''')
         if st.checkbox('TABLE REPORT LABEL FOR TABLE 6'):
-            st.markdown('''obstacle_cost1:Obstacle - lack of in-house funds
+            st.write('''obstacle_cost1:Obstacle - lack of in-house funds
 obstacle_cost2:Obstacle - lack of external financing
 obstacle_cost3:Obstacle - high costs of innovation
 obstacle_cost4:Obstacle - economic risk
