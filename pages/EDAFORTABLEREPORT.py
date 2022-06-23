@@ -136,7 +136,7 @@ def EDA():
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
-        st.plotly_chart(fig)
+            st.plotly_chart(fig)
         if st.checkbox('Effect of innovation (organisational) - reduced costs per unit output'):
             fig = px.histogram(df2, x="ieffect_org3", color="ieffect_org3",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
@@ -180,7 +180,7 @@ def EDA():
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
-        st.plotly_chart(fig)
+            st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Subsidies'):
             fig = px.histogram(df2, x="policysup3", color="policysup3",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
@@ -252,7 +252,7 @@ def EDA():
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
-        st.plotly_chart(fig)
+            st.plotly_chart(fig)
         if st.checkbox('Obstacle - high costs of innovation'):
             fig = px.histogram(df2, x="obstacle_cost3", color="obstacle_cost3",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
