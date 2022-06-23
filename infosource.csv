@@ -1,0 +1,21 @@
+,0,1,2,3,4
+sinfo1,High,Unspecified,Medium,Not Used,Low
+Response,460,444,260,138,57
+sinfo2,Unspecified,High,Medium,Not Used,Low
+Response,454,358,280,168,99
+sinfo3,Unspecified,High,Medium,Not Used,Low
+Response,436,413,273,151,86
+sinfo4,Unspecified,Medium,High,Not Used,Low
+Response,448,262,260,230,159
+sinfo5,Unspecified,Not Used,Medium,Low,High
+Response,461,421,184,177,116
+sinfo6,Not Used,Unspecified,Medium,Low,High
+Response,555,461,138,135,70
+sinfo7,Not Used,Unspecified,Low,Medium,High
+Response,551,460,173,123,52
+sinfo8,Unspecified,Not Used,Medium,Low,High
+Response,443,353,251,168,144
+sinfo9,Unspecified,Not Used,Medium,Low,High
+Response,448,437,193,185,96
+sinfo10,Unspecified,Not Used,Medium,High,Low
+Response,446,296,267,186,164
