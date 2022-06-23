@@ -126,31 +126,31 @@ def EDA():
         df4.replace({'3':'High','2':'Medium','1':'Low','0':'Not experienced',' ':'Unspecified'},inplace=True)
         st.subheader('Effect of innovation Based On their level of success ')
         if st.checkbox('Effect of innovation (organisational) - reduced response time to customer needs'):
-            fig = px.histogram(df2, x="ieffect_org1", color="ieffect_org1",width=800, height=600)
+            fig = px.histogram(df4, x="ieffect_org1", color="ieffect_org1",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                                 paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Effect of innovation (organisational) - improved quality of goods/services'):
-            fig = px.histogram(df2, x="ieffect_org2", color="ieffect_org2",width=800, height=600)
+            fig = px.histogram(df4, x="ieffect_org2", color="ieffect_org2",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Effect of innovation (organisational) - reduced costs per unit output'):
-            fig = px.histogram(df2, x="ieffect_org3", color="ieffect_org3",width=800, height=600)
+            fig = px.histogram(df4, x="ieffect_org3", color="ieffect_org3",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Effect of innovation (organisational) - improved staff satisfaction/reduced turn'):
-            fig = px.histogram(df2, x="ieffect_org4", color="ieffect_org4",width=800, height=600)
+            fig = px.histogram(df4, x="ieffect_org4", color="ieffect_org4",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Effect of innovation (organisational) - increased or maitained market share'):
-            fig = px.histogram(df2, x="ieffect_org5", color="ieffect_org5",width=800, height=600)
+            fig = px.histogram(df4, x="ieffect_org5", color="ieffect_org5",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
@@ -170,49 +170,49 @@ def EDA():
         st.subheader('Importance of govt support policy/prog')
                 
         if st.checkbox('Importance of govt support policy/prog - R&D funding'):
-            fig = px.histogram(df2, x="policysup1", color="policysup1",width=800, height=600)
+            fig = px.histogram(df3, x="policysup1", color="policysup1",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                                 paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Training'):
-            fig = px.histogram(df2, x="policysup2", color="policysup2",width=800, height=600)
+            fig = px.histogram(df3, x="policysup2", color="policysup2",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Subsidies'):
-            fig = px.histogram(df2, x="policysup3", color="policysup3",width=800, height=600)
+            fig = px.histogram(df3, x="policysup3", color="policysup3",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Tax rebates'):
-            fig = px.histogram(df2, x="policysup4", color="policysup4",width=800, height=600)
+            fig = px.histogram(df3, x="policysup4", color="policysup4",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Technical support/advice'):
-            fig = px.histogram(df2, x="policysup5", color="policysup5",width=800, height=600)
+            fig = px.histogram(df3, x="policysup5", color="policysup5",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Infrastructure support'):
-            fig = px.histogram(df2, x="policysup6", color="policysup6",width=800, height=600)
+            fig = px.histogram(df3, x="policysup6", color="policysup6",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog -  Loans and grants'):
-            fig = px.histogram(df2, x="policysup7", color="policysup7",width=800, height=600)
+            fig = px.histogram(df3, x="policysup7", color="policysup7",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Others'):
-            fig = px.histogram(df2, x="policysup8", color="policysup8",width=800, height=600)
+            fig = px.histogram(df3, x="policysup8", color="policysup8",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
                 
