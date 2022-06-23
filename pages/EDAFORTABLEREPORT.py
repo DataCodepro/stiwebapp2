@@ -52,7 +52,7 @@ def EDA():
 'sinfo9',
 'sinfo10'
 ]]
-        df2.replace({'3':'High','2':'Medium','1':'Low','0':'Not Used','':'Unspecified'},inplace=True)
+        df2.replace({'3':'High','2':'Medium','1':'Low','0':'Not Used',' ':'Unspecified'},inplace=True)
         st.subheader('INFORMATION SOURCE')
         if st.checkbox('Information source - Internal'):
             fig = px.histogram(df2, x="sinfo1", color="sinfo1",width=800, height=600)
@@ -123,7 +123,7 @@ def EDA():
 'ieffect_org4',
 'ieffect_org5'
 ]]
-        df4.replace({'3':'High','2':'Medium','1':'Low','0':'Not experienced','':'Unspecified'},inplace=True)
+        df4.replace({'3':'High','2':'Medium','1':'Low','0':'Not experienced',' ':'Unspecified'},inplace=True)
         st.subheader('Effect of innovation Based On their level of success ')
         if st.checkbox('Effect of innovation (organisational) - reduced response time to customer needs'):
             fig = px.histogram(df2, x="ieffect_org1", color="ieffect_org1",width=800, height=600)
@@ -166,7 +166,7 @@ def EDA():
 'policysup7',
 'policysup8'
 ]]
-        df3.replace({'3':'Highly important','2':'Moderately important','1':'Slightly important','0':'Not important','':'Unspecified'},inplace=True)
+        df3.replace({'3':'Highly important','2':'Moderately important','1':'Slightly important','0':'Not important',' ':'Unspecified'},inplace=True)
         st.subheader('Importance of govt support policy/prog')
                 
         if st.checkbox('Importance of govt support policy/prog - R&D funding'):
@@ -213,7 +213,7 @@ def EDA():
             st.plotly_chart(fig)
         if st.checkbox('Importance of govt support policy/prog - Others'):
             fig = px.histogram(df2, x="policysup8", color="policysup8",width=800, height=600)
-            fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
+            fig.update_layout(margin= dict(l=20, r=20, t=20, b=20,
                                             paper_bgcolor="#202A44",)
                 
     elif select == 'Obstacle':
