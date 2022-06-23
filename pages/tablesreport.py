@@ -57,6 +57,7 @@ def tables():
             info.replace({' ':'Unspecified'},inplace =True)
             info.rename({0:'Response'},axis = 1,inplace=True)
             df01 = info.transpose()
+            df01.rename({'3':'Highly important','2':'Moderately important','1':'Slightly important','0':'Not important','':'Unspecified'},inplace=True)
             st.table(df01)
         if st.checkbox('Outcomes and Effect for Products Based on their level of Success'):
             df = pd.read_csv('nigeria-innovation.csv')
