@@ -312,7 +312,7 @@ def EDA():
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#202A44",)
 
-        st.plotly_chart(fig)
+            st.plotly_chart(fig)
         if st.checkbox(':Obstacle - consumers unwilling to pay'):
             fig = px.histogram(df2, x="obstacle_market4", color="obstacle_market4",width=800, height=600)
             fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
