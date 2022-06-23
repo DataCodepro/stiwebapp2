@@ -4,15 +4,15 @@ def label():
     if select == 'TABLE':
         st.subheader('TABLE REPORT LABEL FOR TABLE 3')
         st.write('''sinfo1:Information source - Internal
-    sinfo2:Information source - Suppliers
-    sinfo3:Information source - Customers
-    sinfo4:Information source - Competitors
-    sinfo5:Information source - Consultants, commercial labs or private R&D institutes
-    sinfo6:Information source - Universities, other higher ed. Institutions
-    sinfo7:Information source - Public research institutes
-    sinfo8:Information source - Conferences, fairs, exhibitions
-    sinfo9:Information source - Journals, trade publications
-    sinfo10:Information source - Professional, industry associations
+ sinfo2:Information source - Suppliers
+ sinfo3:Information source - Customers
+ sinfo4:Information source - Competitors
+ sinfo5:Information source - Consultants, commercial labs or private R&D institutes
+ sinfo6:Information source - Universities, other higher ed. Institutions
+ sinfo7:Information source - Public research institutes
+ sinfo8:Information source - Conferences, fairs, exhibitions
+ sinfo9:Information source - Journals, trade publications
+ sinfo10:Information source - Professional, industry associations
     ''')
         if st.checkbox('TABLE REPORT LABEL FOR TABLE 4'):
             st.write('''ieffect_org1:Effect of innovation (organisational) - reduced response time to customer needs
