@@ -7,7 +7,7 @@ import plotly.express as px
 def EDA():
     df = pd.read_csv('nigeria-innovation.csv')
     select = st.sidebar.selectbox("EXPLORATORY DATA ANALYSIS WAVE1 AND WAVE2",['Continuous OR Occational RandD','Innovation and total expendiure','INFORMATION SOURCE',
-        'Effect of innovation','Importance of govt support policy/prog','Obstacle '],key=1)
+        'Effect of innovation','Importance of govt support policy/prog','Obstacle'],key=1)
     if select == 'Continuous OR Occational RandD':
         df = pd.read_excel('randd.xlsx')
         df2 = df[['iact1','crd','ord']]
