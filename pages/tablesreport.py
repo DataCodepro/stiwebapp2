@@ -56,7 +56,8 @@ def tables():
             info = pd.concat([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10],axis=1)
             info.replace({' ':'Unspecified'},inplace =True)
             info.rename({0:'Response'},axis = 1,inplace=True)
-            st.table(info.transpose())
+            df01 = info.transpose()
+            st.table(df01)
         if st.checkbox('Outcomes and Effect for Products Based on their level of Success'):
             df = pd.read_csv('nigeria-innovation.csv')
             df3 =  pd.read_excel('output.xlsx',sheet_name = 'Sheet8')
@@ -80,8 +81,9 @@ def tables():
             effect = pd.concat([d1,d2,d3,d4,d5],axis=1)
             effect.replace({' ':'Unspecified'},inplace =True)
             effect.rename({0:'Response'},axis = 1,inplace=True)
+            df01 = effect.transpose()
 
-            st.table(effect.transpose())
+            st.table(df01)
 
         if st.checkbox('Importance Of Govt Support Policy Programm'):
             df = pd.read_csv('nigeria-innovation.csv')
@@ -114,7 +116,8 @@ def tables():
             policy = pd.concat([d1,d2,d3,d4,d5,d6,d7,d8],axis=1)
             policy.replace({' ':'Unspecified'},inplace =True)
             policy.rename({0:'Output'},axis = 1,inplace=True)
-            st.table(policy.transpose())
+            df01 = policy.transpose()
+            st.table(df01)
         if st.checkbox(' Factors Affecting Innovation Activities by Degree of Importance'):
             df = pd.read_csv('nigeria-innovation.csv')
             df2 = df[['obstacle_cost1',
@@ -185,9 +188,10 @@ def tables():
             obstacle = pd.concat([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d13,d15,d16,d17,d18,d19,d20,d21,d22,d23],axis=1)
             obstacle.replace({' ':'Unspecified'},inplace =True)
             obstacle.rename({0:'Output'},axis = 1,inplace=True)
+            df01 = obstacle.transpose()
             
 
-            st.table(obstacle.transpose())
+            st.table(df01)
                 
 st.set_page_config(page_title="TABLE", page_icon="📈")
 st.markdown("#TABLE REPORT ANALYSIS")
